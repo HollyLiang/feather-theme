@@ -1,6 +1,6 @@
 {
-  "name": "@feather/theme",
-  "version": "1.0.0",
+  "name": "feather-theme",
+  "version": "1.0.0-rc.0",
   "description": "Angular utility library with button, display, spacing, and tag styles",
   "keywords": [
     "angular",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/HollyLiang/feather-theme.git"
   },
   "style": "default.scss",
   "sass": "default.scss",

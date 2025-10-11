@@ -22,15 +22,3 @@
     color: #e0e0e0;
   }
 }
-
-.nav-link {
-  &.active {
-    color: #446192;
-    font-weight: 600;
-    background: #e4e8ef;
-
-    &:hover {
-      background:#e0e0e0;
-    }
-  }
-}

@@ -1,0 +1,36 @@
+<aside class="sidebar" [class.collapsed]="isCollapsed">
+  <button class="sidebar-toggle" (click)="toggleSidebar()" title="Toggle sidebar">
+    <span class="material-icons toggle-icon">{{ isCollapsed ? 'chevron_right' : 'chevron_left' }}</span>
+  </button>
+  
+  <nav class="sidebar-nav">
+    <a routerLink="/buttons" routerLinkActive="active" class="sidebar-link">
+      <span class="material-icons link-icon">radio_button_checked</span>
+      <span class="link-text">Buttons</span>
+    </a>
+    <a routerLink="/display" routerLinkActive="active" class="sidebar-link">
+      <span class="material-icons link-icon">monitor</span>
+      <span class="link-text">Display</span>
+    </a>
+    <a routerLink="/layout" routerLinkActive="active" class="sidebar-link">
+      <span class="material-icons link-icon">dashboard</span>
+      <span class="link-text">Layout</span>
+    </a>
+    <a routerLink="/liquid-glass" routerLinkActive="active" class="sidebar-link">
+      <span class="material-icons link-icon">water_drop</span>
+      <span class="link-text">Liquid Glass</span>
+    </a>
+    <a routerLink="/spacing" routerLinkActive="active" class="sidebar-link">
+      <span class="material-icons link-icon">space_bar</span>
+      <span class="link-text">Spacing</span>
+    </a>
+    <a routerLink="/tags" routerLinkActive="active" class="sidebar-link">
+      <span class="material-icons link-icon">label</span>
+      <span class="link-text">Tags</span>
+    </a>
+    <a routerLink="/typography" routerLinkActive="active" class="sidebar-link">
+      <span class="material-icons link-icon">text_fields</span>
+      <span class="link-text">Typography</span>
+    </a>
+  </nav>
+</aside>
