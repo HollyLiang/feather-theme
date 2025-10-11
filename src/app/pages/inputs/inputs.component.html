@@ -1,0 +1,207 @@
+<div class="ft-container">
+  <header class="page-header">
+    <h1>Inputs</h1>
+    <p>Form input styles with validation states and error messages</p>
+  </header>
+
+  <!-- Basic Inputs Section -->
+  <section class="demo-section">
+    <h2>Basic Inputs</h2>
+    <div class="input-demo-grid">
+      <div class="ft-input-group">
+        <label for="text-input" class="ft-label">Text Input</label>
+        <input type="text" id="text-input" class="ft-input" placeholder="Enter text...">
+      </div>
+
+      <div class="ft-input-group">
+        <label for="email-input" class="ft-label">Email Input</label>
+        <input type="email" id="email-input" class="ft-input" placeholder="example@email.com">
+      </div>
+
+      <div class="ft-input-group">
+        <label for="password-input" class="ft-label">Password Input</label>
+        <input type="password" id="password-input" class="ft-input" placeholder="Enter password">
+      </div>
+
+      <div class="ft-input-group">
+        <label for="disabled-input" class="ft-label">Disabled Input</label>
+        <input type="text" id="disabled-input" class="ft-input" placeholder="Disabled input" disabled>
+      </div>
+    </div>
+  </section>
+
+  <!-- Input Sizes Section -->
+  <section class="demo-section">
+    <h2>Input Sizes</h2>
+    <div class="input-demo-grid">
+      <div class="ft-input-group">
+        <label for="small-input" class="ft-label">Small Input</label>
+        <input type="text" id="small-input" class="ft-input ft-input-sm" placeholder="Small input">
+      </div>
+
+      <div class="ft-input-group">
+        <label for="default-input" class="ft-label">Default Input</label>
+        <input type="text" id="default-input" class="ft-input" placeholder="Default input">
+      </div>
+
+      <div class="ft-input-group">
+        <label for="large-input" class="ft-label">Large Input</label>
+        <input type="text" id="large-input" class="ft-input ft-input-lg" placeholder="Large input">
+      </div>
+    </div>
+  </section>
+
+  <!-- Input with Message Section -->
+  <section class="demo-section">
+    <h2>Input with Message</h2>
+    <div class="input-demo-grid">
+      <div class="ft-input-group">
+        <label for="info-input" class="ft-label">Info Message</label>
+        <input type="text" id="info-input" class="ft-input" placeholder="Enter value">
+        <span class="ft-input-message ft-input-message-info">
+          <span class="material-icons">info</span>
+          This is helpful information for the user
+        </span>
+      </div>
+
+      <div class="ft-input-group">
+        <label for="success-input" class="ft-label">Success Message</label>
+        <input type="text" id="success-input" class="ft-input ft-input-success" value="Valid input"
+          placeholder="Success input">
+        <span class="ft-input-message ft-input-message-success">
+          <span class="material-icons">check_circle</span>
+          Input is valid
+        </span>
+      </div>
+
+      <div class="ft-input-group">
+        <label for="warning-input" class="ft-label">Warning Message</label>
+        <input type="text" id="warning-input" class="ft-input ft-input-warning" value="Warning input"
+          placeholder="Warning input">
+        <span class="ft-input-message ft-input-message-warning">
+          <span class="material-icons">warning</span>
+          This field needs attention
+        </span>
+      </div>
+
+      <div class="ft-input-group">
+        <label for="error-input" class="ft-label">Error Message</label>
+        <input type="text" id="error-input" class="ft-input" value="Invalid input"
+          placeholder="Error input">
+        <span class="ft-input-message ft-input-message-error">
+          <span class="material-icons">error</span>
+          This field is required (static example)
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reactive Form Validation Section -->
+  <section class="demo-section">
+    <h2>Reactive Form Validation</h2>
+    <p class="ft-text-sm ft-text-gray-600">Using Angular FormControl with validators</p>
+    <form [formGroup]="demoForm">
+      <div class="input-demo-grid">
+        <div class="ft-input-group">
+          <label for="form-email" class="ft-label">Email *</label>
+          <input type="email" id="form-email" class="ft-input"
+            formControlName="email" placeholder="Enter your email">
+          <span class="ft-input-message ft-input-message-error" *ngIf="hasError('email')">
+            <span class="material-icons">error</span>
+            {{ getErrorMessage('email') }}
+          </span>
+        </div>
+
+        <div class="ft-input-group">
+          <label for="form-password" class="ft-label">Password *</label>
+          <input type="password" id="form-password" class="ft-input"
+            formControlName="password" placeholder="Min 6 characters">
+          <span class="ft-input-message ft-input-message-error" *ngIf="hasError('password')">
+            <span class="material-icons">error</span>
+            {{ getErrorMessage('password') }}
+          </span>
+        </div>
+
+        <div class="ft-input-group">
+          <label for="form-username" class="ft-label">Username *</label>
+          <input type="text" id="form-username" class="ft-input"
+            formControlName="username" placeholder="3-20 characters">
+          <span class="ft-input-message ft-input-message-error" *ngIf="hasError('username')">
+            <span class="material-icons">error</span>
+            {{ getErrorMessage('username') }}
+          </span>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Textarea Section -->
+  <section class="demo-section">
+    <h2>Textarea</h2>
+    <form [formGroup]="demoForm">
+      <div class="input-demo-grid">
+        <div class="ft-input-group">
+          <label for="textarea-default" class="ft-label">Default Textarea</label>
+          <textarea id="textarea-default" class="ft-input ft-textarea" rows="4"
+            placeholder="Enter your message..."></textarea>
+        </div>
+
+        <div class="ft-input-group">
+          <label for="form-description" class="ft-label">Textarea with Validation *</label>
+          <textarea id="form-description" class="ft-input ft-textarea" rows="4"
+            formControlName="description" placeholder="Enter description..."></textarea>
+          <span class="ft-input-message ft-input-message-error" *ngIf="hasError('description')">
+            <span class="material-icons">error</span>
+            {{ getErrorMessage('description') }}
+          </span>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Input with Icons Section -->
+  <section class="demo-section">
+    <h2>Input with Icons</h2>
+    <div class="input-demo-grid">
+      <div class="ft-input-group">
+        <label for="search-input" class="ft-label">Search Input</label>
+        <div class="ft-input-wrapper">
+          <span class="material-icons ft-input-icon">search</span>
+          <input type="text" id="search-input" class="ft-input ft-input-with-icon" placeholder="Search...">
+        </div>
+      </div>
+
+      <div class="ft-input-group">
+        <label for="user-input" class="ft-label">User Input</label>
+        <div class="ft-input-wrapper">
+          <span class="material-icons ft-input-icon">person</span>
+          <input type="text" id="user-input" class="ft-input ft-input-with-icon" placeholder="Username">
+        </div>
+      </div>
+
+      <div class="ft-input-group">
+        <label for="email-icon-input" class="ft-label">Email with Icon</label>
+        <div class="ft-input-wrapper">
+          <span class="material-icons ft-input-icon">email</span>
+          <input type="email" id="email-icon-input" class="ft-input ft-input-with-icon" placeholder="Email address">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Width Section -->
+  <section class="demo-section">
+    <h2>Full Width Inputs</h2>
+    <div class="ft-input-group mb-2">
+      <label for="fullwidth-input" class="ft-label">Full Width Input</label>
+      <input type="text" id="fullwidth-input" class="ft-input full-width"
+        placeholder="This input takes full width">
+    </div>
+
+    <div class="ft-input-group">
+      <label for="fullwidth-textarea" class="ft-label">Full Width Textarea</label>
+      <textarea id="fullwidth-textarea" class="ft-input ft-textarea full-width" rows="4"
+        placeholder="Full width textarea"></textarea>
+    </div>
+  </section>
+</div>

@@ -3,6 +3,7 @@
     <span class="material-icons toggle-icon">{{ isCollapsed ? 'chevron_right' : 'chevron_left' }}</span>
   </button>
   
+  <!-- Menu items sorted alphabetically by link text (A-Z). Always maintain alphabetical order when adding new items. -->
   <nav class="sidebar-nav">
     <a routerLink="/buttons" routerLinkActive="active" class="sidebar-link">
       <span class="material-icons link-icon">radio_button_checked</span>
@@ -11,6 +12,10 @@
     <a routerLink="/display" routerLinkActive="active" class="sidebar-link">
       <span class="material-icons link-icon">monitor</span>
       <span class="link-text">Display</span>
+    </a>
+    <a routerLink="/inputs" routerLinkActive="active" class="sidebar-link">
+      <span class="material-icons link-icon">input</span>
+      <span class="link-text">Inputs</span>
     </a>
     <a routerLink="/layout" routerLinkActive="active" class="sidebar-link">
       <span class="material-icons link-icon">dashboard</span>
