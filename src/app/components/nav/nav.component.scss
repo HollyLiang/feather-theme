@@ -1,0 +1,36 @@
+@import 'variables';
+
+// Navigation styles
+.main-nav {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(51, 51, 75, 0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #e0e0e0;
+  }
+}
+
+.nav-link {
+  &.active {
+    color: #446192;
+    font-weight: 600;
+    background: #e4e8ef;
+
+    &:hover {
+      background:#e0e0e0;
+    }
+  }
+}

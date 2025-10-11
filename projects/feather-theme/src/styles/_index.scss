@@ -1,0 +1,22 @@
+// ========================================
+// Feather Theme - Main Entry Point
+// ========================================
+// Import this file to get the complete Feather Theme
+// Usage: @import '@feather/theme';
+
+// Core styles
+@import 'variables';
+@import 'reset';
+
+// Layout & Structure
+@import 'layout';
+@import 'display';
+@import 'spacing';
+
+// Typography
+@import 'typography';
+
+// Components
+@import 'button';
+@import 'tag';
+@import 'liquid-glass';

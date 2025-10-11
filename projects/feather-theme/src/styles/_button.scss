@@ -1,0 +1,400 @@
+// ========================================
+// 全站通用按鈕樣式
+//
+// 基礎樣式:
+// - .ft-btn                    預設按鈕 (淺灰背景)
+//
+// 彩色按鈕:
+// - .ft-btn.btn-primary        主要按鈕 (藍色 #446192)
+// - .ft-btn.btn-secondary      次要按鈕 (深藍灰 #273854)
+// - .ft-btn.btn-accent         強調按鈕 (紫色 #6d5d7e)
+// - .ft-btn.btn-success        成功按鈕 (綠色 #4caf50)
+// - .ft-btn.btn-danger         危險按鈕 (紅色 #e74c3c)
+// - .ft-btn.btn-warning        警告按鈕 (橘色 #ff9800)
+//
+// 玻璃質感 (深色背景適用):
+// - .ft-btn.btn-glass          玻璃質感主要按鈕 (半透明白色)
+// - .ft-btn.btn-glass-secondary 玻璃質感次要按鈕 (更透明)
+// - .ft-btn.btn-glass-clear    全透明玻璃質感按鈕 (適合深色背景)
+//
+// 玻璃質感 (淺色背景適用):
+// - .ft-btn.btn-glass-light    淺色玻璃質感主要按鈕 (帶模糊效果)
+// - .ft-btn.btn-glass-light-secondary 淺色玻璃質感次要按鈕 (更透明)
+// - .ft-btn.btn-glass-dark     暗色玻璃質感按鈕 (無模糊效果)
+//
+// 尺寸修飾符:
+// - .btn-sm                 小尺寸按鈕
+// - .btn-lg                 大尺寸按鈕
+//
+// Icon 按鈕:
+// - .btn-icon               純 icon 按鈕 (正方形)
+// - .btn-icon.btn-rounded   圓形 icon 按鈕
+// - .btn-icon-end           icon 在文字後面
+//
+// 使用範例:
+// <button class="ft-btn btn-primary">主要操作</button>
+// <button class="ft-btn btn-sm btn-success">小型成功</button>
+// <button class="ft-btn btn-glass">深色背景玻璃</button>
+// <button class="ft-btn btn-glass-clear">透明玻璃</button>
+// <button class="ft-btn btn-glass-light">淺色玻璃</button>
+// <button class="ft-btn btn-primary"><span class="material-icons">add</span>新增</button>
+// <button class="ft-btn btn-icon btn-primary"><span class="material-icons">add</span></button>
+// <button class="ft-btn btn-icon btn-rounded btn-primary"><span class="material-icons">add</span></button>
+// ========================================
+
+@import 'variables';
+
+.ft-btn {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.5;
+
+  &:focus {
+    outline: none;
+  }
+
+  // Material Icon 對齊
+  .material-icons {
+    font-size: 1.25rem;
+    line-height: 1;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+  }
+
+  // Icon only button (no text)
+  &.btn-icon {
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    .material-icons {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    &.btn-sm {
+      width: 2rem;
+      height: 2rem;
+      padding: 0.375rem;
+
+      .material-icons {
+        font-size: 1.25rem;
+      }
+    }
+
+    &.btn-lg {
+      width: 3rem;
+      height: 3rem;
+      padding: 0.625rem;
+
+      .material-icons {
+        font-size: 1.75rem;
+      }
+    }
+
+    // Rounded (circular) icon button
+    &.btn-rounded {
+      border-radius: 50%;
+    }
+  }
+
+  // Icon at the end
+  &.btn-icon-end {
+    .material-icons {
+      margin-right: 0;
+      margin-left: 0.25rem;
+      order: 1;
+    }
+  }
+
+  // 基礎按鈕 hover 效果
+  &:hover:not(:disabled) {
+    background-color: #e0e0e0;
+    border-color: #bbb;
+    box-shadow: $btn-shadow-base;
+  }
+
+  &:active:not(:disabled) {
+    background-color: #d5d5d5;
+    box-shadow: $btn-shadow-sm;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  // 玻璃質感按鈕 (適合深色背景)
+  &.btn-glass {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    &:hover:not(:disabled) {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:active:not(:disabled) {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+  }
+
+  // 玻璃質感 - 次要按鈕 (更透明)
+  &.btn-glass-secondary {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    &:hover:not(:disabled) {
+      background-color: rgba(255, 255, 255, 0.25);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    &:active:not(:disabled) {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  // 玻璃質感 - 透明按鈕 (適合深色背景)
+  &.btn-glass-clear {
+    background-color: transparent;
+    color: white;
+    border: 1px solid transparent;
+
+    &:hover:not(:disabled) {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ddd;
+      border-color: transparent;
+    }
+
+    &:active:not(:disabled) {
+      color: #ccc;
+    }
+  }
+
+  // 玻璃質感 - 淺色版本 (適合淺色背景)
+  &.btn-glass-light {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #333;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: $btn-shadow-lg;
+
+    &:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.75);
+      border-color: rgba(255, 255, 255, 0.9);
+      box-shadow: $btn-shadow-xl;
+    }
+
+    &:active:not(:disabled) {
+      background: rgba(255, 255, 255, 0.65);
+      box-shadow: $btn-shadow-sm;
+    }
+  }
+
+  // 玻璃質感 - 淺色次要版本 (更透明)
+  &.btn-glass-light-secondary {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #555;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: $btn-shadow-base;
+
+    &:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.55);
+      border-color: rgba(255, 255, 255, 0.75);
+      box-shadow: $btn-shadow-md;
+    }
+
+    &:active:not(:disabled) {
+      background: rgba(255, 255, 255, 0.45);
+      box-shadow: $btn-shadow-sm;
+    }
+  }
+  
+  // 玻璃質感 - 暗色版本 (適合淺色背景，無模糊效果)
+  &.btn-glass-dark {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    &:hover:not(:disabled) {
+      background-color: rgba(0, 0, 0, 0.08);
+      border-color: rgba(0, 0, 0, 0.15);
+    }
+
+    &:active:not(:disabled) {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // 主要按鈕 (藍色)
+  &.btn-primary {
+    background: $color-primary;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: $btn-shadow-base;
+
+    &:hover:not(:disabled) {
+      background: darken($color-primary, 8%);
+      box-shadow: $btn-shadow-md;
+    }
+
+    &:active:not(:disabled) {
+      box-shadow: $btn-shadow-sm;
+    }
+  }
+
+  // 成功按鈕 (綠色)
+  &.btn-success {
+    background: $color-success;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: $btn-shadow-base;
+
+    &:hover:not(:disabled) {
+      background: darken($color-success, 8%);
+      box-shadow: $btn-shadow-md;
+    }
+
+    &:active:not(:disabled) {
+      box-shadow: $btn-shadow-sm;
+    }
+  }
+
+  // 危險按鈕 (紅色)
+  &.btn-danger {
+    background: $color-danger;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: $btn-shadow-base;
+
+    &:hover:not(:disabled) {
+      background: darken($color-danger, 8%);
+      box-shadow: $btn-shadow-md;
+    }
+
+    &:active:not(:disabled) {
+      box-shadow: $btn-shadow-sm;
+    }
+  }
+
+  // 警告按鈕 (橘色)
+  &.btn-warning {
+    background: $color-warning;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: $btn-shadow-base;
+
+    &:hover:not(:disabled) {
+      background: darken($color-warning, 8%);
+      box-shadow: $btn-shadow-md;
+    }
+
+    &:active:not(:disabled) {
+      box-shadow: $btn-shadow-sm;
+    }
+  }
+
+  // 資訊按鈕 (紫色)
+  &.btn-accent {
+    background: $color-accent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: $btn-shadow-base;
+
+    &:hover:not(:disabled) {
+      background: darken($color-accent, 8%);
+      box-shadow: $btn-shadow-md;
+    }
+
+    &:active:not(:disabled) {
+      box-shadow: $btn-shadow-sm;
+    }
+  }
+
+  // 次要按鈕 (深藍紫色)
+  &.btn-secondary {
+    background: $color-secondary;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: $btn-shadow-base;
+
+    &:hover:not(:disabled) {
+      background: darken($color-secondary, 8%);
+      box-shadow: $btn-shadow-md;
+    }
+
+    &:active:not(:disabled) {
+      box-shadow: $btn-shadow-sm;
+    }
+  }
+
+  // 小尺寸按鈕
+  &.btn-sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  // 大尺寸按鈕
+  &.btn-lg {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+// ========================================
+// 按鈕群組
+// ========================================
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+  justify-content: flex-start;
+
+  // 靠左對齊（預設）
+  &.justify-start {
+    justify-content: flex-start;
+  }
+
+  // 置中對齊
+  &.justify-center {
+    justify-content: center;
+  }
+
+  // 靠右對齊
+  &.justify-end {
+    justify-content: flex-end;
+  }
+
+  // 響應式設計：小螢幕垂直排列
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+
+    .ft-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

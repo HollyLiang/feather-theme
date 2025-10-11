@@ -1,0 +1,45 @@
+.liquid-demo-hero,
+.colored-glass-hero {
+  background: url('/assets/imgs/bg-1.JPEG') center/cover no-repeat;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  color: white;
+  position: relative;
+
+  // 添加深色遮罩以提高文字可讀性
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    pointer-events: none;
+  }
+
+  // 確保內容在遮罩之上
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  h2 {
+    color: white;
+    border-bottom-color: #eee;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.liquid-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.colored-glass-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}

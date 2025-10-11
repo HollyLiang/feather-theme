@@ -1,0 +1,25 @@
+{
+  "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#33334B",
+      "activityBar.activeBorder": "#912e69",
+      "activityBar.background": "#33334B",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#912e69",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "statusBar.background": "#33334B",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#3e8dc2",
+      "titleBar.activeBackground": "#33334B",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#333333",
+      "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#31719c",
+  "angular-schematics.schematicsDefaultOptions": {
+    "angular-*": {
+      "style": "scss",
+      "externalTemplate": true
+    }
+  }
+}

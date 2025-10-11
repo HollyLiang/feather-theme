@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Import Feather Theme (local development)
+@import '../projects/feather-theme';
+
+// Global styles
+
+body {
+  font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+  line-height: 1.6;
+  color: $color-gray-800;
+  background-color: $color-gray-50;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: $color-primary;
+  }
+  
+  p {
+    font-size: 1.125rem;
+    color: $color-gray-600;
+  }
+}
+
+.demo-section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: $color-primary;
+    border-bottom: 2px solid $color-primary;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.subsection {
+  margin-bottom: 2rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: $color-secondary;
+  }
+}
+
+.dark-bg {
+  background: linear-gradient(135deg, $color-secondary 0%, $color-primary 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+// Color palette styles
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.5rem;
+}
+
+.color-item {
+  text-align: center;
+}
+
+.color-swatch {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.color-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.color-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: $color-gray-800;
+}
+
+.color-hex {
+  font-size: 0.875rem;
+  color: $color-gray-500;
+  font-family: 'Courier New', monospace;
+}
+
+pre {
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid #e5e7eb;
+  
+  code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-family: Consolas, Monaco, monospace;
+    line-height: 1.6;
+    color: #374151;
+    display: block;
+  }
+}

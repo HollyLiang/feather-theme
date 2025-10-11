@@ -1,0 +1,31 @@
+{
+  "name": "@feather/theme",
+  "version": "1.0.0",
+  "description": "Angular utility library with button, display, spacing, and tag styles",
+  "keywords": [
+    "angular",
+    "theme",
+    "theming",
+    "material",
+    "scss"
+  ],
+  "author": "Feather Theme Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "style": "default.scss",
+  "sass": "default.scss",
+  "schematics": "./schematics/collection.json",
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "peerDependencies": {
+    "@angular/common": "^18.0.0",
+    "@angular/core": "^18.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

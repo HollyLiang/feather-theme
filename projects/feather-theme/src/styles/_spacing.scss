@@ -1,0 +1,130 @@
+// Spacing 間距工具類別
+// 包含 Padding 和 Margin 的通用樣式
+
+$spacers: (
+  0: 0,
+  1: 0.25rem,  // 4px
+  2: 0.5rem,   // 8px
+  3: 0.75rem,  // 12px
+  4: 1rem,     // 16px
+  5: 1.25rem,  // 20px
+  6: 1.5rem,   // 24px
+  7: 2rem,     // 32px
+  8: 2.5rem,   // 40px
+  9: 3rem,     // 48px
+  10: 4rem,    // 64px
+);
+
+// ========== Padding ==========
+
+// Padding - 全方向
+@each $key, $value in $spacers {
+  .p-#{$key} {
+    padding: $value !important;
+  }
+}
+
+// Padding - 垂直 (top + bottom)
+@each $key, $value in $spacers {
+  .py-#{$key} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+}
+
+// Padding - 水平 (left + right)
+@each $key, $value in $spacers {
+  .px-#{$key} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+}
+
+// Padding - 單邊
+@each $key, $value in $spacers {
+  .pt-#{$key} {
+    padding-top: $value !important;
+  }
+  .pb-#{$key} {
+    padding-bottom: $value !important;
+  }
+  .pl-#{$key} {
+    padding-left: $value !important;
+  }
+  .pr-#{$key} {
+    padding-right: $value !important;
+  }
+}
+
+// ========== Margin ==========
+
+// Margin - 全方向
+@each $key, $value in $spacers {
+  .m-#{$key} {
+    margin: $value !important;
+  }
+}
+
+// Margin - 垂直 (top + bottom)
+@each $key, $value in $spacers {
+  .my-#{$key} {
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+}
+
+// Margin - 水平 (left + right)
+@each $key, $value in $spacers {
+  .mx-#{$key} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+}
+
+// Margin - 單邊
+@each $key, $value in $spacers {
+  .mt-#{$key} {
+    margin-top: $value !important;
+  }
+  .mb-#{$key} {
+    margin-bottom: $value !important;
+  }
+  .ml-#{$key} {
+    margin-left: $value !important;
+  }
+  .mr-#{$key} {
+    margin-right: $value !important;
+  }
+}
+
+// ========== 特殊值 ==========
+
+.m-auto {
+  margin: auto !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.mt-auto {
+  margin-top: auto !important;
+}
+
+.mb-auto {
+  margin-bottom: auto !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}

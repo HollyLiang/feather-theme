@@ -1,0 +1,196 @@
+// ========================================
+// Text Styles
+// ========================================
+
+@import 'variables';
+
+// Text color utilities (inline type)
+.text-primary {
+  color: $color-primary;
+}
+
+.text-secondary {
+  color: $color-secondary;
+}
+
+.text-accent {
+  color: $color-accent;
+}
+
+.text-success {
+  color: $color-success;
+}
+
+.text-danger {
+  color: $color-danger;
+}
+
+.text-warning {
+  color: $color-warning;
+}
+
+.text-info {
+  color: $color-info;
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.text-black {
+  color: $color-black;
+}
+
+// Gray text colors
+.text-gray-100 { color: $color-gray-100; }
+.text-gray-200 { color: $color-gray-200; }
+.text-gray-300 { color: $color-gray-300; }
+.text-gray-400 { color: $color-gray-400; }
+.text-gray-500 { color: $color-gray-500; }
+.text-gray-600 { color: $color-gray-600; }
+.text-gray-700 { color: $color-gray-700; }
+.text-gray-800 { color: $color-gray-800; }
+.text-gray-900 { color: $color-gray-900; }
+
+// Background color utilities with white text
+.bg-primary {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius-sm;
+}
+
+.bg-secondary {
+  background-color: $color-secondary;
+  color: $color-white;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius-sm;
+}
+
+.bg-accent {
+  background-color: $color-accent;
+  color: $color-white;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius-sm;
+}
+
+.bg-success {
+  background-color: $color-success;
+  color: $color-white;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius-sm;
+}
+
+.bg-danger {
+  background-color: $color-danger;
+  color: $color-white;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius-sm;
+}
+
+.bg-warning {
+  background-color: $color-warning;
+  color: $color-white;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius-sm;
+}
+
+.bg-info {
+  background-color: $color-info;
+  color: $color-white;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius-sm;
+}
+
+// Text alignment
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+// Font weight
+.text-light {
+  font-weight: 300;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+// Font size
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+// Text decoration
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-no-decoration {
+  text-decoration: none;
+}
+
+// Text transform
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}

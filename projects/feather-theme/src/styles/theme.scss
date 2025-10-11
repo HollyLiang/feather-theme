@@ -1,0 +1,23 @@
+// ========================================
+// Feather Theme - @use Module Entry
+// ========================================
+// This file is for @use syntax
+// Usage:
+//   @use 'node_modules/@feather/theme/src/styles/theme' as feather;
+//   @include feather.core();
+
+// Forward variables for access
+@forward 'variables';
+
+// Mixin to include all styles
+@mixin core() {
+  @import 'variables';
+  @import 'reset';
+  @import 'layout';
+  @import 'display';
+  @import 'spacing';
+  @import 'typography';
+  @import 'button';
+  @import 'tag';
+  @import 'liquid-glass';
+}

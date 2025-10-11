@@ -1,0 +1,276 @@
+// ========================================
+// Layout System
+// ========================================
+
+.ft-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .ft-layout-header {
+        flex: 0 0 auto;
+    }
+
+    .ft-layout-content {
+        flex: 1 1 auto;
+        overflow: auto;
+    }
+
+    .ft-layout-footer {
+        flex: 0 0 auto;
+    }
+
+    // Vertical layout (default)
+    &.ft-layout-vertical {
+        flex-direction: column;
+    }
+
+    // Horizontal layout with sidebar
+    &.ft-layout-horizontal {
+        flex-direction: row;
+    }
+}
+
+// ========================================
+// Aside (Sidebar)
+// ========================================
+
+.ft-aside {
+    background: #ffffff;
+    border-right: 1px solid #e3e6ef;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    
+    // Default width
+    width: 250px;
+    flex: 0 0 250px;
+
+    // Sizes
+    &.ft-aside-sm {
+        width: 200px;
+        flex: 0 0 200px;
+    }
+
+    &.ft-aside-lg {
+        width: 300px;
+        flex: 0 0 300px;
+    }
+
+    &.ft-aside-xl {
+        width: 350px;
+        flex: 0 0 350px;
+    }
+
+    // Position variants
+    &.ft-aside-left {
+        order: -1;
+        border-right: 1px solid #e3e6ef;
+        border-left: none;
+    }
+
+    &.ft-aside-right {
+        order: 1;
+        border-left: 1px solid #e3e6ef;
+        border-right: none;
+    }
+
+    // Dark theme
+    &.ft-aside-dark {
+        background: #1f2937;
+        color: #f9fafb;
+        border-color: #374151;
+    }
+
+    // Collapsible sidebar
+    &.ft-aside-collapsed {
+        width: 60px;
+        flex: 0 0 60px;
+
+        .ft-aside-content {
+            display: none;
+        }
+    }
+
+    // Sticky sidebar
+    &.ft-aside-sticky {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
+}
+
+// Aside Header
+.ft-aside-header {
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #e3e6ef;
+    font-weight: 600;
+    font-size: 1.125rem;
+
+    .ft-aside-dark & {
+        border-color: #374151;
+    }
+}
+
+// Aside Content
+.ft-aside-content {
+    padding: 1rem;
+}
+
+// Aside Footer
+.ft-aside-footer {
+    padding: 1rem;
+    border-top: 1px solid #e3e6ef;
+    margin-top: auto;
+
+    .ft-aside-dark & {
+        border-color: #374151;
+    }
+}
+
+// Aside Navigation
+.ft-aside-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .ft-aside-nav-item {
+        margin-bottom: 0.25rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            color: #4b5563;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background: #f3f4f6;
+                color: #1f2937;
+            }
+
+            &.active {
+                background: #446192;
+                color: #ffffff;
+            }
+
+            .material-icons {
+                margin-right: 0.75rem;
+                font-size: 1.25rem;
+            }
+        }
+
+        .ft-aside-dark & a {
+            color: #d1d5db;
+
+            &:hover {
+                background: #374151;
+                color: #f9fafb;
+            }
+
+            &.active {
+                background: #446192;
+                color: #ffffff;
+            }
+        }
+    }
+
+    // Nested navigation
+    .ft-aside-nav-submenu {
+        list-style: none;
+        padding-left: 2rem;
+        margin-top: 0.25rem;
+
+        a {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+    }
+}
+
+// Layout with Aside
+.ft-layout-with-aside {
+    display: flex;
+    min-height: 100vh;
+
+    .ft-aside {
+        flex-shrink: 0;
+    }
+
+    .ft-layout-main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-width: 0; // Prevent flex item overflow
+    }
+}
+
+// Responsive behavior
+@media (max-width: 768px) {
+    .ft-aside {
+        position: fixed;
+        left: -250px;
+        top: 0;
+        height: 100vh;
+        z-index: 1000;
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+
+        &.ft-aside-open {
+            left: 0;
+        }
+
+        &.ft-aside-sm {
+            left: -200px;
+        }
+
+        &.ft-aside-lg {
+            left: -300px;
+        }
+
+        &.ft-aside-xl {
+            left: -350px;
+        }
+    }
+
+    // Overlay for mobile
+    .ft-aside-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+
+
+.ft-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding: .75rem 1.5rem;
+    }
+
+    @media (max-width: 767px) {
+        padding: 0.5rem 1rem;
+    }
+
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}

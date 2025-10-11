@@ -1,0 +1,110 @@
+<div class="ft-container">
+  <header class="page-header">
+    <h1>Display</h1>
+    <p>Utility classes for layout and display management</p>
+  </header>
+
+  <!-- Flexbox Section -->
+  <section class="demo-section">
+    <h2>Flexbox Utilities</h2>
+    <div class="demo-box d-flex"
+      style="gap: 1rem; padding: 1rem; background: #f0f0f0; border-radius: 8px; margin-bottom: 1rem;">
+      <div style="padding: 0.5rem; background: white; border-radius: 4px;">Item 1</div>
+      <div style="padding: 0.5rem; background: white; border-radius: 4px;">Item 2</div>
+      <div style="padding: 0.5rem; background: white; border-radius: 4px;">Item 3</div>
+    </div>
+    <p><code>.d-flex</code> - Creates a flex container with items in a row</p>
+  </section>
+
+  <!-- Center Alignment Section -->
+  <section class="demo-section">
+    <h2>Center Alignment</h2>
+    <div class="demo-box d-center" style="height: 120px; background: #f0f0f0; border-radius: 8px; margin-bottom: 1rem;">
+      <div style="padding: 1rem; background: white; border-radius: 4px;">Centered Content</div>
+    </div>
+    <p><code>.d-center</code> - Centers content both horizontally and vertically</p>
+  </section>
+
+  <!-- Space Between Section -->
+  <section class="demo-section">
+    <h2>Space Between</h2>
+    <div class="demo-box d-space-between"
+      style="padding: 1rem; background: #f0f0f0; border-radius: 8px; margin-bottom: 1rem;">
+      <div style="padding: 0.5rem; background: white; border-radius: 4px;">Left Item</div>
+      <div style="padding: 0.5rem; background: white; border-radius: 4px;">Right Item</div>
+    </div>
+    <p><code>.d-space-between</code> - Distributes items with space between them</p>
+  </section>
+
+  <!-- Display Types Section -->
+  <section class="demo-section">
+    <h2>Display Types</h2>
+
+    <div class="subsection">
+      <h3>Block Display</h3>
+      <div style="background: #f0f0f0; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+        <div class="d-block" style="padding: 0.5rem; background: white; border-radius: 4px; margin-bottom: 0.5rem;">
+          Block Element 1</div>
+        <div class="d-block" style="padding: 0.5rem; background: white; border-radius: 4px;">Block Element 2</div>
+      </div>
+      <p><code>.d-block</code> - Display as block element (full width)</p>
+    </div>
+
+    <div class="subsection">
+      <h3>Inline Display</h3>
+      <div style="background: #f0f0f0; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+        <span class="d-inline" style="padding: 0.5rem; background: white; border-radius: 4px;">Inline 1</span>
+        <span class="d-inline" style="padding: 0.5rem; background: white; border-radius: 4px;">Inline 2</span>
+        <span class="d-inline" style="padding: 0.5rem; background: white; border-radius: 4px;">Inline 3</span>
+      </div>
+      <p><code>.d-inline</code> - Display as inline element (flows with text)</p>
+    </div>
+
+    <div class="subsection">
+      <h3>Inline Block Display</h3>
+      <div style="background: #f0f0f0; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+        <div class="d-inline-block"
+          style="padding: 0.5rem; background: white; border-radius: 4px; margin-right: 0.5rem;">Inline Block 1</div>
+        <div class="d-inline-block"
+          style="padding: 0.5rem; background: white; border-radius: 4px; margin-right: 0.5rem;">Inline Block 2</div>
+        <div class="d-inline-block" style="padding: 0.5rem; background: white; border-radius: 4px;">Inline Block 3</div>
+      </div>
+      <p><code>.d-inline-block</code> - Display as inline-block (inline but with block properties)</p>
+    </div>
+
+    <div class="subsection">
+      <h3>Grid Display</h3>
+      <div class="d-grid"
+        style="grid-template-columns: repeat(3, 1fr); gap: 1rem; background: #f0f0f0; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+        <div style="padding: 0.5rem; background: white; border-radius: 4px;">Grid 1</div>
+        <div style="padding: 0.5rem; background: white; border-radius: 4px;">Grid 2</div>
+        <div style="padding: 0.5rem; background: white; border-radius: 4px;">Grid 3</div>
+      </div>
+      <p><code>.d-grid</code> - Display as grid container</p>
+    </div>
+
+    <div class="subsection">
+      <h3>Hide Element</h3>
+      <div style="background: #f0f0f0; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+        <div style="padding: 0.5rem; background: white; border-radius: 4px; margin-bottom: 0.5rem;">Visible Element
+        </div>
+        <div class="d-none" style="padding: 0.5rem; background: white; border-radius: 4px; margin-bottom: 0.5rem;">
+          Hidden Element</div>
+        <div style="padding: 0.5rem; background: white; border-radius: 4px;">Another Visible Element</div>
+      </div>
+      <p><code>.d-none</code> - Hides the element (display: none)</p>
+    </div>
+  </section>
+
+  <!-- Flex Utilities Section -->
+  <section class="demo-section">
+    <h2>Flex Utilities</h2>
+    <div class="d-flex" style="gap: 1rem; padding: 1rem; background: #f0f0f0; border-radius: 8px; margin-bottom: 1rem;">
+      <div style="padding: 0.5rem; background: white; border-radius: 4px;">Fixed Width</div>
+      <div class="flex-1" style="padding: 0.5rem; background: #e3f2fd; border-radius: 4px;">flex-1 (grows to fill
+        available space)</div>
+      <div style="padding: 0.5rem; background: white; border-radius: 4px;">Fixed Width</div>
+    </div>
+    <p><code>.flex-1</code> - Allows element to grow and fill available space (flex: 1)</p>
+  </section>
+</div>

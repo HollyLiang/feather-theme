@@ -1,0 +1,21 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Config files
+tsconfig.json
+tsconfig.*.json
+ng-package.json
+karma.conf.js
+
+# Tests
+*.spec.ts
+test.ts
+
+# Development files
+.editorconfig
+.gitignore
+
+# Docs folder is included in the package
+# docs/

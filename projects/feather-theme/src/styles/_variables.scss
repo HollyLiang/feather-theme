@@ -1,0 +1,80 @@
+// ========================================
+// 全站通用變數定義
+// 使用 !default 允許使用者在匯入前覆蓋變數
+// ========================================
+
+// 主題顏色
+$color-primary: #446192 !default;
+$color-secondary: #273854 !default;
+$color-accent: #6d5d7e !default;
+$color-success: #4caf50 !default;
+$color-danger: #e73c3c !default;
+$color-warning: #ffbb00 !default;
+$color-info: #116cb1 !default;
+
+// 中性色
+$color-white: #ffffff !default;
+$color-black: #000000 !default;
+$color-gray-50: #f9fafb !default;
+$color-gray-100: #f3f4f6 !default;
+$color-gray-200: #e5e7eb !default;
+$color-gray-300: #d1d5db !default;
+$color-gray-400: #9ca3af !default;
+$color-gray-500: #6b7280 !default;
+$color-gray-600: #4b5563 !default;
+$color-gray-700: #374151 !default;
+$color-gray-800: #1f2937 !default;
+$color-gray-900: #111827 !default;
+
+// 按鈕陰影
+$btn-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1) !default;
+$btn-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.1) !default;
+$btn-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.2) !default;
+$btn-shadow-lg: 0 2px 8px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1) !default;
+$btn-shadow-xl: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.12) !default;
+
+// 邊框圓角
+$border-radius-sm: 4px !default;
+$border-radius-base: 8px !default;
+$border-radius-lg: 12px !default;
+$border-radius-xl: 16px !default;
+$border-radius-full: 9999px !default;
+
+// 間距
+$spacing-xs: 0.25rem !default;
+$spacing-sm: 0.5rem !default;
+$spacing-base: 1rem !default;
+$spacing-md: 1.5rem !default;
+$spacing-lg: 2rem !default;
+$spacing-xl: 3rem !default;
+
+// 字體大小
+$font-size-xs: 0.75rem !default;
+$font-size-sm: 0.875rem !default;
+$font-size-base: 1rem !default;
+$font-size-lg: 1.125rem !default;
+$font-size-xl: 1.25rem !default;
+$font-size-2xl: 1.5rem !default;
+$font-size-3xl: 1.875rem !default;
+
+// 過渡效果
+$transition-fast: 0.15s ease !default;
+$transition-base: 0.3s ease !default;
+$transition-slow: 0.5s ease !default;
+
+// Snackbar 顏色
+$snackbar-success-bg: lighten($color-success, 40%) !default;
+$snackbar-success-text: darken($color-success, 15%) !default;
+$snackbar-success-border: lighten($color-success, 40%) !default;
+
+$snackbar-error-bg: lighten($color-danger, 35%) !default;
+$snackbar-error-text: darken($color-danger, 10%) !default;
+$snackbar-error-border: lighten($color-danger, 25%) !default;
+
+$snackbar-warning-bg: lighten($color-warning, 35%) !default;
+$snackbar-warning-text: darken($color-warning, 30%) !default;
+$snackbar-warning-border: lighten($color-warning, 25%) !default;
+
+$snackbar-info-bg: lighten($color-info, 55%) !default;
+$snackbar-info-text: darken($color-info, 20%) !default;
+$snackbar-info-border: lighten($color-info, 45%) !default;
