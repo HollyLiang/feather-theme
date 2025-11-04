@@ -1,6 +1,10 @@
-<app-nav />
-<app-sidebar />
+<div class="layout-container full-height">
+  <app-nav class="layout-header"></app-nav>
 
-<main class="main-content">
-  <router-outlet />
-</main>
+  <div class="layout-content layout-container layout-horizontal">
+    <app-sidebar class="layout-aside"></app-sidebar>
+    <main class="layout-content">
+      <router-outlet />
+    </main>
+  </div>
+</div>

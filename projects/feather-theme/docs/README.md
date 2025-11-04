@@ -42,7 +42,7 @@ npm install @feather/theme
 @import 'node_modules/@feather/theme/src/styles/button';
 @import 'node_modules/@feather/theme/src/styles/spacing';
 @import 'node_modules/@feather/theme/src/styles/tag';
-@import 'node_modules/@feather/theme/src/styles/liquid-glass';
+@import 'node_modules/@feather/theme/src/styles/card';
 ```
 
 **注意**: 如果你使用 `ng add @feather/theme`，會自動添加完整匯入。
@@ -98,15 +98,15 @@ export class AppModule { }
 ### 按鈕群組
 
 ```html
-<div class="button-group">
+<div class="ft-button-group">
   <button class="btn btn-primary">按鈕 1</button>
   <button class="btn btn-secondary">按鈕 2</button>
   <button class="btn btn-success">按鈕 3</button>
 </div>
 
 <!-- 對齊方式 -->
-<div class="button-group justify-center">置中對齊</div>
-<div class="button-group justify-end">靠右對齊</div>
+<div class="ft-button-group justify-center">置中對齊</div>
+<div class="ft-button-group justify-end">靠右對齊</div>
 ```
 
 ## 間距工具

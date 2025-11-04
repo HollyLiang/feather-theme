@@ -1,18 +1,15 @@
 @import 'variables';
 
 .sidebar {
-  position: fixed;
-  left: 0;
-  top: 60px; // Adjust based on nav height
-  height: calc(100vh - 60px);
-  width: 250px;
+  height: 100%;
   background: rgba(51, 51, 75, 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
   transition: width 0.3s ease, transform 0.3s ease;
   z-index: 999;
-  overflow-x: hidden;
+  overflow: auto;
+  position: relative;
 
   &.collapsed {
     width: 60px;
@@ -30,13 +27,13 @@
 
 .sidebar-toggle {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  top: 0.5rem;
+  right: 0.5rem;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,6 +41,7 @@
   color: #ffffff;
   font-size: 1.2rem;
   transition: background 0.3s ease;
+  z-index: 10;
 
   &:hover {
     background: rgba(255, 255, 255, 0.2);
@@ -56,10 +54,36 @@
 }
 
 .sidebar-nav {
-  padding: 50px 0 20px;
+  padding: .5rem 0;
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav-section-title {
+  padding: 0.5rem 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+
+  .link-text {
+    margin-left: 0;
+  }
 }
 
 .sidebar-link {

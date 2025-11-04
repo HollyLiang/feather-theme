@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - 基礎按鈕和彩色按鈕 (primary, success, danger, warning, accent, secondary)
   - 玻璃質感按鈕 (glass, glass-light, glass-dark)
   - 按鈕尺寸 (sm, lg)
-  - 按鈕群組 (button-group)
+  - 按鈕群組 (ft-button-group)
 - 間距工具類別 (Spacing utilities)
   - Padding 工具 (p-*, py-*, px-*, pt-*, pb-*, pl-*, pr-*)
   - Margin 工具 (m-*, my-*, mx-*, mt-*, mb-*, ml-*, mr-*)

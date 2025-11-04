@@ -1,41 +1,57 @@
-<aside class="sidebar" [class.collapsed]="isCollapsed">
+<aside class="sidebar scrollbar" [class.collapsed]="isCollapsed">
   <button class="sidebar-toggle" (click)="toggleSidebar()" title="Toggle sidebar">
     <span class="material-icons toggle-icon">{{ isCollapsed ? 'chevron_right' : 'chevron_left' }}</span>
   </button>
-  
-  <!-- Menu items sorted alphabetically by link text (A-Z). Always maintain alphabetical order when adding new items. -->
+
   <nav class="sidebar-nav">
-    <a routerLink="/buttons" routerLinkActive="active" class="sidebar-link">
-      <span class="material-icons link-icon">radio_button_checked</span>
-      <span class="link-text">Buttons</span>
-    </a>
-    <a routerLink="/display" routerLinkActive="active" class="sidebar-link">
-      <span class="material-icons link-icon">monitor</span>
-      <span class="link-text">Display</span>
-    </a>
-    <a routerLink="/inputs" routerLinkActive="active" class="sidebar-link">
-      <span class="material-icons link-icon">input</span>
-      <span class="link-text">Inputs</span>
-    </a>
-    <a routerLink="/layout" routerLinkActive="active" class="sidebar-link">
-      <span class="material-icons link-icon">dashboard</span>
-      <span class="link-text">Layout</span>
-    </a>
-    <a routerLink="/liquid-glass" routerLinkActive="active" class="sidebar-link">
-      <span class="material-icons link-icon">water_drop</span>
-      <span class="link-text">Liquid Glass</span>
-    </a>
-    <a routerLink="/spacing" routerLinkActive="active" class="sidebar-link">
-      <span class="material-icons link-icon">space_bar</span>
-      <span class="link-text">Spacing</span>
-    </a>
-    <a routerLink="/tags" routerLinkActive="active" class="sidebar-link">
-      <span class="material-icons link-icon">label</span>
-      <span class="link-text">Tags</span>
-    </a>
-    <a routerLink="/typography" routerLinkActive="active" class="sidebar-link">
-      <span class="material-icons link-icon">text_fields</span>
-      <span class="link-text">Typography</span>
-    </a>
+    <!-- Components (with ft- prefix) -->
+    <div class="nav-section">
+      <div class="nav-section-title">
+        <span class="link-text">Components</span>
+      </div>
+      <a routerLink="/buttons" routerLinkActive="active" class="sidebar-link">
+        <span class="material-icons link-icon">radio_button_checked</span>
+        <span class="link-text">Buttons</span>
+      </a>
+      <a routerLink="/inputs" routerLinkActive="active" class="sidebar-link">
+        <span class="material-icons link-icon">input</span>
+        <span class="link-text">Inputs</span>
+      </a>
+      <a routerLink="/messages" routerLinkActive="active" class="sidebar-link">
+        <span class="material-icons link-icon">message</span>
+        <span class="link-text">Messages</span>
+      </a>
+      <a routerLink="/tags" routerLinkActive="active" class="sidebar-link">
+        <span class="material-icons link-icon">label</span>
+        <span class="link-text">Tags</span>
+      </a>
+    </div>
+
+    <!-- Utilities -->
+    <div class="nav-section">
+      <div class="nav-section-title">
+        <span class="link-text">Utilities</span>
+      </div>
+      <a routerLink="/display" routerLinkActive="active" class="sidebar-link">
+        <span class="material-icons link-icon">monitor</span>
+        <span class="link-text">Display</span>
+      </a>
+      <a routerLink="/layout" routerLinkActive="active" class="sidebar-link">
+        <span class="material-icons link-icon">dashboard</span>
+        <span class="link-text">Layout</span>
+      </a>
+      <a routerLink="/card" routerLinkActive="active" class="sidebar-link">
+        <span class="material-icons link-icon">water_drop</span>
+        <span class="link-text">Cards</span>
+      </a>
+      <a routerLink="/spacing" routerLinkActive="active" class="sidebar-link">
+        <span class="material-icons link-icon">space_bar</span>
+        <span class="link-text">Spacing</span>
+      </a>
+      <a routerLink="/typography" routerLinkActive="active" class="sidebar-link">
+        <span class="material-icons link-icon">text_fields</span>
+        <span class="link-text">Typography</span>
+      </a>
+    </div>
   </nav>
 </aside>

@@ -57,7 +57,7 @@ npm run build:feather-theme
 <button class="btn btn-lg btn-primary">大按鈕</button>
 
 <!-- 按鈕群組 -->
-<div class="button-group">
+<div class="ft-button-group">
   <button class="btn btn-primary">儲存</button>
   <button class="btn">取消</button>
 </div>
@@ -180,7 +180,7 @@ ng lint feather-theme
   <h1 class="mb-4">@feather/theme 範例</h1>
   
   <!-- 按鈕區 -->
-  <div class="button-group mb-6">
+  <div class="ft-button-group mb-6">
     <button class="btn btn-primary">主要操作</button>
     <button class="btn btn-success">確認</button>
     <button class="btn btn-danger">刪除</button>

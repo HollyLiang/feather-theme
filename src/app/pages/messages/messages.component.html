@@ -1,0 +1,200 @@
+<div class="container">
+  <header class="page-header">
+    <h1>Messages</h1>
+    <p>Message boxes and toast notifications for displaying important information</p>
+  </header>
+
+  <!-- Toast Notifications -->
+  <section class="demo-section">
+    <h2>Toast Notifications</h2>
+    <p class="ft-text-sm ft-text-gray-600">Floating notifications that appear temporarily</p>
+
+    <div class="d-flex" style="gap: 0.5rem; flex-wrap: wrap;">
+      <button class="ft-btn ft-btn-primary" (click)="showInfoToast()">Show Info Toast</button>
+      <button class="ft-btn ft-btn-success" (click)="showSuccessToast()">Show Success Toast</button>
+      <button class="ft-btn ft-btn-warning" (click)="showWarningToast()">Show Warning Toast</button>
+      <button class="ft-btn ft-btn-danger" (click)="showErrorToast()">Show Error Toast</button>
+      <button class="ft-btn ft-btn-secondary" (click)="showToastWithButtons()">Toast with Buttons</button>
+      <button class="ft-btn ft-btn-secondary" (click)="showPersistentToast()">Persistent Toast</button>
+    </div>
+  </section>
+
+  <!-- Inline Messages -->
+  <section class="demo-section">
+    <h2>Inline Messages</h2>
+    <p class="ft-text-sm ft-text-gray-600">Simple list-style messages with left border accent</p>
+    <div class="d-flex" style="gap: 0.5rem;">
+      <div class="ft-msg ft-msg-info">
+        <span class="material-icons">info</span>
+        <div class="ft-msg-text">This is an informational message</div>
+      </div>
+
+      <div class="ft-msg ft-msg-success">
+        <span class="material-icons">check_circle</span>
+        <div class="ft-msg-text">Operation completed successfully</div>
+      </div>
+
+      <div class="ft-msg ft-msg-warning">
+        <span class="material-icons">warning</span>
+        <div class="ft-msg-text">Please review this warning</div>
+      </div>
+
+      <div class="ft-msg ft-msg-error">
+        <span class="material-icons">error</span>
+        <div class="ft-msg-text">An error occurred</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Boxes -->
+  <section class="demo-section">
+    <h2>Message Boxes</h2>
+    <p class="ft-text-sm ft-text-gray-600">Full message boxes with background and detailed content</p>
+    <div class="d-flex" style="gap: 1rem;">
+      <!-- Info Message Box -->
+      <div class="ft-msg-box ft-msg-box-info">
+        <span class="material-icons">info</span>
+        <div class="ft-msg-content">
+          <div class="ft-msg-title">Information</div>
+          <div class="ft-msg-text">This is an informational message to provide helpful context to the user.</div>
+        </div>
+      </div>
+
+      <!-- Success Message Box -->
+      <div class="ft-msg-box ft-msg-box-success">
+        <span class="material-icons">check_circle</span>
+        <div class="ft-msg-content">
+          <div class="ft-msg-title">Success</div>
+          <div class="ft-msg-text">Your form has been submitted successfully. You will receive a confirmation email
+            shortly.</div>
+        </div>
+      </div>
+
+      <!-- Warning Message Box -->
+      <div class="ft-msg-box ft-msg-box-warning">
+        <span class="material-icons">warning</span>
+        <div class="ft-msg-content">
+          <div class="ft-msg-title">Warning</div>
+          <div class="ft-msg-text">Please review your information carefully before proceeding. Some fields may need
+            attention.</div>
+        </div>
+      </div>
+
+      <!-- Error Message Box -->
+      <div class="ft-msg-box ft-msg-box-error">
+        <span class="material-icons">error</span>
+        <div class="ft-msg-content">
+          <div class="ft-msg-title">Error</div>
+          <div class="ft-msg-text">Unable to process your request. Please check the form for errors and try again.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simple Message Boxes (without title) -->
+  <section class="demo-section">
+    <h2>Simple Message Boxes</h2>
+    <p class="ft-text-sm ft-text-gray-600">Message boxes without titles for simpler notifications</p>
+    <div class="d-flex" style="gap: 1rem;">
+      <div class="ft-msg-box ft-msg-box-info">
+        <span class="material-icons">info</span>
+        <div class="ft-msg-content">
+          <div class="ft-msg-text">This is a simple informational message without a title.</div>
+        </div>
+      </div>
+
+      <div class="ft-msg-box ft-msg-box-success">
+        <span class="material-icons">check_circle</span>
+        <div class="ft-msg-content">
+          <div class="ft-msg-text">Operation completed successfully!</div>
+        </div>
+      </div>
+
+      <div class="ft-msg-box ft-msg-box-warning">
+        <span class="material-icons">warning</span>
+        <div class="ft-msg-content">
+          <div class="ft-msg-text">This action cannot be undone.</div>
+        </div>
+      </div>
+
+      <div class="ft-msg-box ft-msg-box-error">
+        <span class="material-icons">error</span>
+        <div class="ft-msg-content">
+          <div class="ft-msg-text">An error occurred while processing your request.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Boxes with Actions -->
+  <section class="demo-section">
+    <h2>Message Boxes with Actions</h2>
+    <p class="ft-text-sm ft-text-gray-600">Message boxes can include action buttons</p>
+    <div class="d-flex" style="gap: 1rem;">
+      <div class="ft-msg-box ft-msg-box-warning">
+        <span class="material-icons">warning</span>
+        <div class="ft-msg-content">
+          <div class="ft-msg-title">Unsaved Changes</div>
+          <div class="ft-msg-text">You have unsaved changes. Do you want to save them before leaving?</div>
+        </div>
+        <div class="ft-msg-actions">
+          <button class="ft-btn ft-btn-sm ft-btn-primary">Save</button>
+          <button class="ft-btn ft-btn-sm ft-btn-secondary">Discard</button>
+        </div>
+      </div>
+
+      <div class="ft-msg-box ft-msg-box-info">
+        <span class="material-icons">info</span>
+        <div class="ft-msg-content">
+          <div class="ft-msg-text">A new version is available. Update now to get the latest features.</div>
+        </div>
+        <div class="ft-msg-actions">
+          <button class="ft-btn ft-btn-sm ft-btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage Examples -->
+  <section class="demo-section">
+    <h2>Usage Examples</h2>
+
+    <h3 class="ft-text-base ft-font-semibold mb-2">Inline Message (HTML)</h3>
+    <pre class="code-block"><code>&lt;div class="ft-msg ft-info"&gt;
+  &lt;span class="material-icons"&gt;info&lt;/span&gt;
+  &lt;div class="ft-msg-text"&gt;Your message text here&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <h3 class="ft-text-base ft-font-semibold mb-2 mt-4">Message Box (HTML)</h3>
+    <pre class="code-block"><code>&lt;div class="ft-msg-box ft-info"&gt;
+  &lt;span class="material-icons"&gt;info&lt;/span&gt;
+  &lt;div class="ft-msg-content"&gt;
+    &lt;div class="ft-msg-title"&gt;Title (optional)&lt;/div&gt;
+    &lt;div class="ft-msg-text"&gt;Your message text here&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <h3 class="ft-text-base ft-font-semibold mb-2 mt-4">Toast Service (TypeScript)</h3>
+    <pre class="code-block"><code>import {{ '{' }} FtMessageService {{ '}' }} from '&#64;feather/theme';
+
+constructor(private messageService: FtMessageService) {{ '{' }}{{ '}' }}
+
+// Simple toast
+this.messageService.success('Operation completed!');
+
+// Toast with title
+this.messageService.info('New message', 'Notification');
+
+// Toast with buttons
+this.messageService.show({{ '{' }}
+  type: 'warning',
+  title: 'Confirm Action',
+  message: 'Are you sure you want to continue?',
+  buttons: [
+    {{ '{' }} text: 'Yes', action: () => this.confirm() {{ '}' }},
+    {{ '{' }} text: 'No', action: () => this.cancel() {{ '}' }}
+  ]
+{{ '}' }});</code></pre>
+  </section>
+</div>

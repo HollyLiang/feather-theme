@@ -1,22 +1,22 @@
 // ========================================
-// Liquid Glass Card Effect (iOS-inspired)
+// Card Effect (iOS-inspired)
 // ========================================
-// 流動玻璃卡片效果，靈感來自 iOS 設計語言
+// 卡片效果，靈感來自 iOS 設計語言
 // 特點：動態模糊、漸層、光澤、深度感
 
 @import 'variables';
 
 // ========================================
-// Light Liquid Glass Card
+// Light Card
 // ========================================
 
-.ft-liquid-glass {
+.ft-card {
   position: relative;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
+  box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.6);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -53,23 +53,23 @@
   // Hover effect
   &:hover {
     background: rgba(255, 255, 255, 0.85);
-    box-shadow: 
+    box-shadow:
       0 12px 40px rgba(0, 0, 0, 0.15),
       inset 0 1px 0 rgba(255, 255, 255, 0.7);
   }
 }
 
 // ========================================
-// Dark Liquid Glass Card
+// Dark Card
 // ========================================
 
-.ft-liquid-glass-dark {
+.ft-card-dark {
   position: relative;
   background: rgba(30, 30, 30, 0.7);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 
+  box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.9);
@@ -103,23 +103,23 @@
   // Hover effect
   &:hover {
     background: rgba(40, 40, 40, 0.85);
-    box-shadow: 
+    box-shadow:
       0 12px 40px rgba(0, 0, 0, 0.4),
       inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
 }
 
 // ========================================
-// Primary Liquid Glass Card
+// Primary Card
 // ========================================
 
-.ft-liquid-glass-primary {
+.ft-card-primary {
   position: relative;
   background: rgba(68, 97, 146, 0.3);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(68, 97, 146, 0.4);
-  box-shadow: 
+  box-shadow:
     0 8px 32px rgba(68, 97, 146, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
   color: #446192;
@@ -153,23 +153,23 @@
   // Hover effect
   &:hover {
     background: rgba(68, 97, 146, 0.45);
-    box-shadow: 
+    box-shadow:
       0 12px 40px rgba(68, 97, 146, 0.3),
       inset 0 1px 0 rgba(255, 255, 255, 0.5);
   }
 }
 
 // ========================================
-// Success Liquid Glass Card
+// Success Card
 // ========================================
 
-.ft-liquid-glass-success {
+.ft-card-success {
   position: relative;
   background: rgba(76, 175, 80, 0.3);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(76, 175, 80, 0.4);
-  box-shadow: 
+  box-shadow:
     0 8px 32px rgba(76, 175, 80, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
   color: #2e7d32;
@@ -203,23 +203,23 @@
   // Hover effect
   &:hover {
     background: rgba(76, 175, 80, 0.45);
-    box-shadow: 
+    box-shadow:
       0 12px 40px rgba(76, 175, 80, 0.3),
       inset 0 1px 0 rgba(255, 255, 255, 0.5);
   }
 }
 
 // ========================================
-// Warning Liquid Glass Card
+// Warning Card
 // ========================================
 
-.ft-liquid-glass-warning {
+.ft-card-warning {
   position: relative;
   background: rgba(255, 152, 0, 0.3);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 152, 0, 0.4);
-  box-shadow: 
+  box-shadow:
     0 8px 32px rgba(255, 152, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
   color: #e65100;
@@ -253,23 +253,23 @@
   // Hover effect
   &:hover {
     background: rgba(255, 152, 0, 0.45);
-    box-shadow: 
+    box-shadow:
       0 12px 40px rgba(255, 152, 0, 0.3),
       inset 0 1px 0 rgba(255, 255, 255, 0.5);
   }
 }
 
 // ========================================
-// Danger Liquid Glass Card
+// Danger Card
 // ========================================
 
-.ft-liquid-glass-danger {
+.ft-card-danger {
   position: relative;
   background: rgba(231, 76, 60, 0.3);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(231, 76, 60, 0.4);
-  box-shadow: 
+  box-shadow:
     0 8px 32px rgba(231, 76, 60, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
   color: #c62828;
@@ -303,7 +303,7 @@
   // Hover effect
   &:hover {
     background: rgba(231, 76, 60, 0.45);
-    box-shadow: 
+    box-shadow:
       0 12px 40px rgba(231, 76, 60, 0.3),
       inset 0 1px 0 rgba(255, 255, 255, 0.5);
   }

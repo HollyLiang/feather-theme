@@ -92,7 +92,7 @@
 }
 
 // Input messages
-.ft-input-message {
+.ft-input-msg {
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -103,19 +103,19 @@
   }
 }
 
-.ft-input-message-success {
+.ft-input-msg-success {
   color: $color-success;
 }
 
-.ft-input-message-warning {
+.ft-input-msg-warning {
   color: darken($color-warning, 10%);
 }
 
-.ft-input-message-error {
+.ft-input-msg-error {
   color: $color-danger;
 }
 
-.ft-input-message-info {
+.ft-input-msg-info {
   color: $color-info;
 }
 
@@ -139,7 +139,7 @@
 }
 
 // Input group (vertical layout for label + input + message)
-.ft-input-group {
+.ft-input-field {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;

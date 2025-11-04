@@ -162,7 +162,7 @@ export const routes: Routes = [
 **使用 Feather Theme 工具類別**:
 - `.ft-container` - 響應式容器，自動置中和 padding
 - `.d-flex`, `.d-center`, `.d-space-between` - Display 工具
-- `.button-group` - 按鈕群組布局
+- `.ft-button-group` - 按鈕群組布局
 
 ## 色彩更新
 

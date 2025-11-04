@@ -1,4 +1,4 @@
-<div class="ft-container">
+<div class="container">
   <header class="page-header">
     <h1>Tags</h1>
     <p>Lightweight tag components for labels and categories</p>
@@ -9,13 +9,13 @@
     <h2>Default Tags</h2>
     <div>
       <span class="ft-tag">Default</span>
-      <span class="ft-tag tag-primary">Primary</span>
-      <span class="ft-tag tag-secondary">Secondary</span>
-      <span class="ft-tag tag-accent">Accent</span>
-      <span class="ft-tag tag-success">Success</span>
-      <span class="ft-tag tag-warning">Warning</span>
-      <span class="ft-tag tag-danger">Danger</span>
-      <span class="ft-tag tag-info">Info</span>
+      <span class="ft-tag ft-tag-primary">Primary</span>
+      <span class="ft-tag ft-tag-secondary">Secondary</span>
+      <span class="ft-tag ft-tag-accent">Accent</span>
+      <span class="ft-tag ft-tag-success">Success</span>
+      <span class="ft-tag ft-tag-warning">Warning</span>
+      <span class="ft-tag ft-tag-danger">Danger</span>
+      <span class="ft-tag ft-tag-info">Info</span>
     </div>
   </section>
 
@@ -23,48 +23,89 @@
   <section class="demo-section">
     <h2>Outline Tags</h2>
     <div>
-      <span class="ft-tag tag-outline">Default</span>
-      <span class="ft-tag tag-outline tag-default">Default (Explicit)</span>
-      <span class="ft-tag tag-outline tag-primary">Primary</span>
-      <span class="ft-tag tag-outline tag-secondary">Secondary</span>
-      <span class="ft-tag tag-outline tag-accent">Accent</span>
-      <span class="ft-tag tag-outline tag-success">Success</span>
-      <span class="ft-tag tag-outline tag-warning">Warning</span>
-      <span class="ft-tag tag-outline tag-danger">Danger</span>
-      <span class="ft-tag tag-outline tag-info">Info</span>
+      <span class="ft-tag ft-tag-outline">Default</span>
+      <span class="ft-tag ft-tag-outline ft-tag-default">Default (Explicit)</span>
+      <span class="ft-tag ft-tag-outline ft-tag-primary">Primary</span>
+      <span class="ft-tag ft-tag-outline ft-tag-secondary">Secondary</span>
+      <span class="ft-tag ft-tag-outline ft-tag-accent">Accent</span>
+      <span class="ft-tag ft-tag-outline ft-tag-success">Success</span>
+      <span class="ft-tag ft-tag-outline ft-tag-warning">Warning</span>
+      <span class="ft-tag ft-tag-outline ft-tag-danger">Danger</span>
+      <span class="ft-tag ft-tag-outline ft-tag-info">Info</span>
     </div>
   </section>
 
   <!-- Usage Examples Section -->
   <section class="demo-section">
     <h2>Usage Examples</h2>
-    
+
     <div class="subsection">
       <h3>Status Tags</h3>
       <div>
-        <span class="ft-tag tag-success">Active</span>
-        <span class="ft-tag tag-warning">Pending</span>
-        <span class="ft-tag tag-danger">Inactive</span>
+        <span class="ft-tag ft-tag-success">Active</span>
+        <span class="ft-tag ft-tag-warning">Pending</span>
+        <span class="ft-tag ft-tag-danger">Inactive</span>
       </div>
     </div>
 
     <div class="subsection">
       <h3>Category Tags</h3>
       <div>
-        <span class="ft-tag tag-primary">Angular</span>
-        <span class="ft-tag tag-accent">TypeScript</span>
-        <span class="ft-tag tag-info">SCSS</span>
+        <span class="ft-tag ft-tag-primary">Angular</span>
+        <span class="ft-tag ft-tag-accent">TypeScript</span>
+        <span class="ft-tag ft-tag-info">SCSS</span>
       </div>
     </div>
 
     <div class="subsection">
       <h3>Priority Tags</h3>
       <div>
-        <span class="ft-tag tag-danger">High</span>
-        <span class="ft-tag tag-warning">Medium</span>
-        <span class="ft-tag">Low</span>
+        <span class="ft-tag ft-tag-danger">High</span>
+        <span class="ft-tag ft-tag-warning">Medium</span>
+        <span class="ft-tag ft-tag-info">Low</span>
       </div>
     </div>
   </section>
-</div>
 
+  <!-- Code Examples Section -->
+  <section class="demo-section">
+    <h2>Code Examples</h2>
+
+    <div class="subsection">
+      <h3 class="ft-text-base ft-font-semibold mb-2">Basic Tags (HTML)</h3>
+      <pre class="code-block"><code>&lt;span class="ft-tag"&gt;Default&lt;/span&gt;
+&lt;span class="ft-tag ft-tag-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="ft-tag ft-tag-success"&gt;Success&lt;/span&gt;</code></pre>
+    </div>
+
+    <div class="subsection">
+      <h3 class="ft-text-base ft-font-semibold mb-2 mt-4">Outline Tags (HTML)</h3>
+      <pre class="code-block"><code>&lt;span class="ft-tag ft-tag-outline"&gt;Default Outline&lt;/span&gt;
+&lt;span class="ft-tag ft-tag-outline ft-tag-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="ft-tag ft-tag-outline ft-tag-success"&gt;Success&lt;/span&gt;</code></pre>
+    </div>
+
+    <div class="subsection">
+      <h3 class="ft-text-base ft-font-semibold mb-2 mt-4">Status Tags (HTML)</h3>
+      <pre class="code-block"><code>&lt;span class="ft-tag ft-tag-success"&gt;Active&lt;/span&gt;
+&lt;span class="ft-tag ft-tag-warning"&gt;Pending&lt;/span&gt;
+&lt;span class="ft-tag ft-tag-danger"&gt;Inactive&lt;/span&gt;</code></pre>
+    </div>
+
+    <div class="subsection">
+      <h3 class="ft-text-base ft-font-semibold mb-2 mt-4">Category Tags (HTML)</h3>
+      <pre class="code-block"><code>&lt;span class="ft-tag ft-tag-primary"&gt;Angular&lt;/span&gt;
+&lt;span class="ft-tag ft-tag-accent"&gt;TypeScript&lt;/span&gt;
+&lt;span class="ft-tag ft-tag-info"&gt;SCSS&lt;/span&gt;</code></pre>
+    </div>
+
+    <div class="subsection">
+      <h3 class="ft-text-base ft-font-semibold mb-2 mt-4">Multiple Tags (HTML)</h3>
+      <pre class="code-block"><code>&lt;div class="tag-container"&gt;
+  &lt;span class="ft-tag ft-tag-primary"&gt;Frontend&lt;/span&gt;
+  &lt;span class="ft-tag ft-tag-accent"&gt;Backend&lt;/span&gt;
+  &lt;span class="ft-tag ft-tag-info"&gt;Database&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+</div>

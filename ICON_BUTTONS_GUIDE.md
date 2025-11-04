@@ -286,7 +286,7 @@ Icon 顯示在文字前面，這是預設行為。
 ### 表單操作列
 
 ```html
-<div class="button-group">
+<div class="ft-button-group">
   <button class="btn btn-primary">
     <span class="material-icons">save</span>
     Save
@@ -301,7 +301,7 @@ Icon 顯示在文字前面，這是預設行為。
 ### 工具列
 
 ```html
-<div class="button-group">
+<div class="ft-button-group">
   <button class="btn btn-icon btn-default" title="Edit">
     <span class="material-icons">edit</span>
   </button>
@@ -320,7 +320,7 @@ Icon 顯示在文字前面，這是預設行為。
 ### 導航按鈕
 
 ```html
-<div class="button-group justify-space-between">
+<div class="ft-button-group justify-space-between">
   <button class="btn btn-secondary">
     <span class="material-icons">arrow_back</span>
     Previous

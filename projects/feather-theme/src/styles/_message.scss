@@ -1,0 +1,288 @@
+// ========================================
+// Message Styles
+// ========================================
+
+// Inline messages (list-style with left border)
+.ft-msg {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: $border-radius-sm;
+  font-size: $font-size-sm;
+  border-left: 4px solid;
+  background-color: transparent;
+
+  .material-icons {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .ft-msg-text {
+    flex: 1;
+    line-height: 1.5;
+  }
+}
+
+.ft-msg-info {
+  border-left-color: $color-info;
+  color: darken($color-info, 20%);
+  background-color: lighten($color-info, 55%);
+
+  .material-icons {
+    color: $color-info;
+  }
+}
+
+.ft-msg-success {
+  border-left-color: $color-success;
+  color: darken($color-success, 20%);
+  background-color: lighten($color-success, 45%);
+
+  .material-icons {
+    color: $color-success;
+  }
+}
+
+.ft-msg-warning {
+  border-left-color: $color-warning;
+  color: darken($color-warning, 30%);
+  background-color: lighten($color-warning, 45%);
+
+  .material-icons {
+    color: darken($color-warning, 10%);
+  }
+}
+
+.ft-msg-error {
+  border-left-color: $color-danger;
+  color: darken($color-danger, 10%);
+  background-color: lighten($color-danger, 40%);
+
+  .material-icons {
+    color: $color-danger;
+  }
+}
+
+// Message boxes (standalone alert boxes with background)
+.ft-msg-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: $border-radius-base;
+  font-size: $font-size-sm;
+  border: 1px solid transparent;
+
+  .material-icons {
+    font-size: 36px;
+  }
+
+  .ft-msg-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ft-msg-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .ft-msg-text {
+    line-height: 1.5;
+  }
+
+  .ft-msg-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+}
+
+.ft-msg-box-info {
+  background-color: lighten($color-info, 55%);
+  border-color: lighten($color-info, 50%);
+  color: darken($color-info, 20%);
+
+  .material-icons {
+    color: $color-info;
+  }
+}
+
+.ft-msg-box-success {
+  background-color: lighten($color-success, 45%);
+  border-color: lighten($color-success, 40%);
+  color: darken($color-success, 20%);
+
+  .material-icons {
+    color: $color-success;
+  }
+}
+
+.ft-msg-box-warning {
+  background-color: lighten($color-warning, 45%);
+  border-color: lighten($color-warning, 40%);
+  color: darken($color-warning, 30%);
+
+  .material-icons {
+    color: darken($color-warning, 10%);
+  }
+}
+
+.ft-msg-box-error {
+  background-color: lighten($color-danger, 40%);
+  border-color: lighten($color-danger, 35%);
+  color: darken($color-danger, 10%);
+
+  .material-icons {
+    color: $color-danger;
+  }
+}
+
+// Toast notifications (floating messages)
+.ft-toast-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 400px;
+  pointer-events: none;
+
+  .ft-toast {
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    border-radius: $border-radius-base;
+    font-size: $font-size-sm;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: $color-white;
+    border: 1px solid $color-gray-200;
+    animation: slideInRight 0.3s ease-out;
+
+    .material-icons {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .ft-toast-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .ft-toast-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .ft-toast-text {
+      line-height: 1.5;
+    }
+
+    .ft-toast-actions {
+      display: flex;
+      gap: 0.5rem;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+
+    .ft-toast-close {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      color: $color-gray-500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color $transition-base;
+
+      &:hover {
+        color: $color-gray-700;
+      }
+
+      .material-icons {
+        font-size: 18px;
+      }
+    }
+
+    &.ft-toast-info {
+      background-color: lighten($color-info, 55%);
+      border-color: lighten($color-info, 50%);
+      border-left: 4px solid $color-info;
+      color: darken($color-info, 20%);
+
+      .material-icons:first-child {
+        color: $color-info;
+      }
+    }
+
+    &.ft-toast-success {
+      background-color: lighten($color-success, 45%);
+      border-color: lighten($color-success, 40%);
+      border-left: 4px solid $color-success;
+      color: darken($color-success, 20%);
+
+      .material-icons:first-child {
+        color: $color-success;
+      }
+    }
+
+    &.ft-toast-warning {
+      background-color: lighten($color-warning, 45%);
+      border-color: lighten($color-warning, 40%);
+      border-left: 4px solid $color-warning;
+      color: darken($color-warning, 30%);
+
+      .material-icons:first-child {
+        color: darken($color-warning, 10%);
+      }
+    }
+
+    &.ft-toast-error {
+      background-color: lighten($color-danger, 40%);
+      border-color: lighten($color-danger, 35%);
+      border-left: 4px solid $color-danger;
+      color: darken($color-danger, 10%);
+
+      .material-icons:first-child {
+        color: $color-danger;
+      }
+    }
+
+    &.ft-toast-closing {
+      animation: slideOutRight 0.3s ease-in forwards;
+    }
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

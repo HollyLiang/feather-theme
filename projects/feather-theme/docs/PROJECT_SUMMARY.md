@@ -25,7 +25,7 @@
   - 彩色按鈕 (primary, success, danger, warning, accent, secondary)
   - 玻璃質感按鈕 (glass, glass-secondary, glass-light, glass-light-secondary, glass-dark)
   - 尺寸變化 (btn-sm, btn-lg)
-  - 按鈕群組 (button-group)
+  - 按鈕群組 (ft-button-group)
   - 響應式設計
 
 - ✅ **_spacing.scss** - 間距工具

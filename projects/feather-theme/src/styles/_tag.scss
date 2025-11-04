@@ -16,7 +16,7 @@
   }
 
   // Default style: Solid with white text
-  &.tag-primary {
+  &.ft-tag-primary {
     background: $color-primary;
     color: $color-white;
     border-color: $color-primary;
@@ -28,38 +28,38 @@
     border-color: $color-secondary;
   }
 
-  &.tag-accent {
+  &.ft-tag-accent {
     background: $color-accent;
     color: $color-white;
     border-color: $color-accent;
   }
 
-  &.tag-success {
+  &.ft-tag-success {
     background: $color-success;
     color: $color-white;
     border-color: $color-success;
   }
 
-  &.tag-warning {
+  &.ft-tag-warning {
     background: $color-warning;
     color: $color-white;
     border-color: $color-warning;
   }
 
-  &.tag-danger {
+  &.ft-tag-danger {
     background: $color-danger;
     color: $color-white;
     border-color: $color-danger;
   }
 
-  &.tag-info {
+  &.ft-tag-info {
     background: $color-info;
     color: $color-white;
     border-color: $color-info;
   }
 
   // Outline variants
-  &.tag-outline {
+  &.ft-tag-outline {
     background: transparent;
     border-width: 1px;
     border-style: solid;
@@ -67,52 +67,51 @@
     border-color: $color-gray-400;
   }
 
-  &.tag-outline.tag-default {
+  &.ft-tag-outline.ft-tag-default {
     background: transparent;
     color: $color-gray-600;
     border-color: $color-gray-400;
   }
 
-  &.tag-outline.tag-primary {
+  &.ft-tag-outline.ft-tag-primary {
     background: transparent;
     color: $color-primary;
     border-color: $color-primary;
   }
 
-  &.tag-outline.tag-secondary {
+  &.ft-tag-outline.ft-tag-secondary {
     background: transparent;
     color: $color-secondary;
     border-color: $color-secondary;
   }
 
-  &.tag-outline.tag-accent {
+  &.ft-tag-outline.ft-tag-accent {
     background: transparent;
     color: $color-accent;
     border-color: $color-accent;
   }
 
-  &.tag-outline.tag-success {
+  &.ft-tag-outline.ft-tag-success {
     background: transparent;
     color: $color-success;
     border-color: $color-success;
   }
 
-  &.tag-outline.tag-warning {
+  &.ft-tag-outline.ft-tag-warning {
     background: transparent;
     color: $color-warning;
     border-color: $color-warning;
   }
 
-  &.tag-outline.tag-danger {
+  &.ft-tag-outline.ft-tag-danger {
     background: transparent;
     color: $color-danger;
     border-color: $color-danger;
   }
 
-  &.tag-outline.tag-info {
+  &.ft-tag-outline.ft-tag-info {
     background: transparent;
     color: $color-info;
     border-color: $color-info;
   }
-
 }
